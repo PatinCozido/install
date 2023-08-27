@@ -42,7 +42,7 @@ RED='\033[0;31m'
 
 error() {
   echo ""
-  echo -e "* ${RED}ERROR: $1"
+  echo -e "* ${RED}ERROR${RESET}: $1"
   echo ""
 }
 
