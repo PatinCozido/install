@@ -40,12 +40,6 @@ YELLOW="\033[1;33m"
 RESET="\e[0m"
 RED='\033[0;31m'
 
-error() {
-  echo ""
-  echo -e "* ${RED}ERROR${RESET}: $1"
-  echo ""
-}
-
 # Check Sudo #
 if [[ $EUID -ne 0 ]]; then
   echo "* This script must be executed with root privileges (sudo)." 1>&2
